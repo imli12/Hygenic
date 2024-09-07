@@ -1,0 +1,418 @@
+/* Universal CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+/* Navbar CSS */
+.navbar,
+.links ul {
+  display: flex;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #343f4f;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+ul li {
+  padding: 8px;
+}
+
+.links ul li a {
+  color: #fff;
+}
+
+.links ul li a:hover {
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main video {
+  width: 100%;
+  height: calc(100vh - 9vh);
+  object-fit: cover;
+}
+
+.web-dev {
+  position: absolute;
+  text-align: center;
+}
+
+.web-dev h1 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.web-dev span {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.web-dev p,
+h1 {
+  color: #fff;
+}
+.menu{
+  display: none;
+}
+
+.menu i{
+  overflow: hidden;
+}
+
+/* About CSS */
+.text {
+  font-size: 33px;
+  font-weight: 600;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  flex-wrap: wrap;
+  line-height: 25px;
+}
+
+.child1 {
+  width: 60%;
+}
+
+.about-para {
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.about-para p,
+h3 {
+  color: black;
+}
+
+.child2 img {
+  height: 300px;
+  margin-left: 10px;
+  transform: translateX(100%);
+  transition: transform 1s ease;
+}
+
+.about-info {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.about-info p {
+  font-weight: bolder;
+}
+
+.about-info p span {
+  font-weight: normal;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px;
+}
+
+.icons i {
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.child2 img.show {
+  transform: translateX(0);
+}
+
+/* Education CSS */
+.eduation {
+  display: flex;
+  padding-top: 30px;
+  font-family: sans-serif;
+}
+
+.edu h3 {
+  font-size: 15px;
+}
+
+.edu {
+  padding: 0 70px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.edu1,
+.edu2 {
+  border-right: 1px solid black;
+}
+
+.hsslc {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.st {
+  padding-top: 20px;
+}
+
+/* Profiles CSS */
+.profiles {
+  padding-top: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.row i {
+  margin: 100px 0;
+  font-size: 2rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.row i:hover {
+  transform: scale(3);
+  transition: transform 0.3s ease;
+}
+
+.fa-docker:hover {
+  color: blue;
+}
+
+.fa-linkedin:hover {
+  color: blue;
+}
+
+.fa-stack-overflow:hover {
+  color: orangered;
+}
+
+.row .fa-youtube:hover {
+  color: red;
+}
+
+/* Contacts CSS */
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.portion3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portion1,
+.portion2,
+.portion3 {
+  border-right: 1px solid black;
+}
+
+.portion {
+  padding: 0 70px;
+}
+.portion3 i {
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.portion2 .box2 {
+  padding-top: 40px;
+}
+
+.portion1,
+.portion4 {
+  display: flex;
+  align-items: center;
+}
+
+.portion1 {
+  flex-direction: column;
+  justify-content: center;
+}
+.portion1 input {
+  border-bottom: 2px solid black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+}
+.portion1 input:nth-child(1) {
+  margin-top: 30px;
+}
+
+.portion1 input:nth-child(3) {
+  margin-top: 30px;
+}
+
+.portion1 h3 {
+  font-size: 1rem;
+}
+.portion2 {
+  line-height: 25px;
+}
+.portion1 button {
+  margin-top: 50px;
+  padding: 8px;
+  width: 120px;
+  border: none;
+  background-color: rgb(178, 173, 173);
+}
+.portion2,
+.portion3,
+.portion4 {
+  margin-top: 20px;
+}
+
+.portion4 {
+  text-align: center;
+}
+#back-to-top {
+  position: absolute;
+  right: 20px;
+  padding: 15px;
+  background-color: rgb(89, 170, 89);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 770px) {
+  .navbar {
+    padding: 20px;
+  }
+  .links,
+  .portfolio {
+    display: none;
+  }
+  .web-dev h1 {
+    font-size: 20px;
+  }
+  .web-dev span {
+    font-size: 30px;
+  }
+  .web-dev p {
+    width: 260px;
+  }
+  .navbar h1 {
+    font-size: 1rem;
+  }
+  .menu{
+    display: block;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .main video {
+    height: calc(100vh - 10vh);
+  }
+  .child2 img {
+    height: 200px;
+  }
+  .about-info {
+    font-size: 12px;
+  }
+  .about-para p,
+  h3 {
+    font-size: 1rem;
+  }
+  .icons i {
+    font-size: 20px;
+  }
+  .eduation {
+    flex-wrap: wrap;
+  }
+  .edu1,
+  .edu2 {
+    border: none;
+  }
+  .hsslc {
+    border: none;
+    padding-bottom: 0;
+  }
+  .st {
+    padding-top: 0;
+  }
+  .para {
+    padding-top: 20px;
+  }
+  .row i {
+    font-size: 1.2rem;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portion1,
+  .portion2,
+  .portion3 {
+    border: none;
+  }
+  .portion2 {
+    text-align: center;
+  }
+  .portion2 .box1 i{
+    overflow: hidden;
+  }
+  .portion2 .box2 i{
+    overflow: hidden;
+  }
+  .portion3 i{
+    overflow: hidden;
+  }
+  .text {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .row i:hover {
+    transform: scale(2);
+  }
+  #back-to-top{
+    padding: 12px;
+    overflow: hidden;
+  }
+}
